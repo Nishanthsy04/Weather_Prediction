@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-
 :root {
   --primary-color: #5598fd;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -42,14 +40,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-
-
-
-background-image: url("C:/Users/nbchi/OneDrive/Desktop/Final Project/side7.jpg");
-
-
-
-
+  background-image: url("C:/Users/nbchi/OneDrive/Desktop/Final Project/side7.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -66,23 +57,9 @@ background-image: url("C:/Users/nbchi/OneDrive/Desktop/Final Project/side7.jpg")
   background: rgba(0, 0, 0, 0.4); /* Add a separate background color or image for the blur effect */
   filter: blur(70px);
 }
-
-
 .location-text{
   font-size: 25px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 .search {
   display: flex;
   align-items: center;
@@ -116,16 +93,6 @@ background-image: url("C:/Users/nbchi/OneDrive/Desktop/Final Project/side7.jpg")
   font-size: 20px;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
 .search button {
   min-width: 40px;
   height: 40px;
@@ -136,30 +103,14 @@ background-image: url("C:/Users/nbchi/OneDrive/Desktop/Final Project/side7.jpg")
  color: #06283D;
   font-size: 18px;
   cursor: pointer;
-  
-    background-image: linear-gradient(to right, #00b4db, #0083b0);
-    transition: 0.4s ease;
+  background-image: linear-gradient(to right, #00b4db, #0083b0);
+  transition: 0.4s ease;
 }
-
 
 .search button:hover{
     color: #fff;
     background: #06283D;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .search ul {
   max-height: 300px;
   overflow-y: auto;
@@ -240,23 +191,12 @@ background-image: url("C:/Users/nbchi/OneDrive/Desktop/Final Project/side7.jpg")
   width: 100%;
   min-width: 400px;
   padding: 20px 40px;
- 
   position: relative;
   padding-bottom: 90px;
-
-
-background-image: url("C:/Users/nbchi/OneDrive/Desktop/Final Project/side5.jpg");
-
-
-
-
+  background-image: url("C:/Users/nbchi/OneDrive/Desktop/Final Project/side5.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-
-
-
 
 }
 
@@ -347,12 +287,6 @@ background-image: url("C:/Users/nbchi/OneDrive/Desktop/Final Project/side5.jpg")
 {
   margin-top: 100px;
 }
-
-
-
-
-
-
 .card{
     
     background-color: #5b1a86;
@@ -363,11 +297,6 @@ background-image: url("C:/Users/nbchi/OneDrive/Desktop/Final Project/side5.jpg")
 .card:hover {
     transform: translateY(-10px);
 }
-
-
-
-
-
 .card2 {
     
     background-color: #5b1a86;
@@ -378,8 +307,6 @@ background-image: url("C:/Users/nbchi/OneDrive/Desktop/Final Project/side5.jpg")
 .card2:hover {
     transform: translateY(-10px);
 }
-
-
 
 .highlights .heading {
   width: 100%;
