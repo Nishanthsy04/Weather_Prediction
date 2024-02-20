@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
 :root {
-  --primary-color: #5598fd;
+  --primary-color: #ffffff;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   display: flex;
   justify-content: center;
@@ -15,15 +18,17 @@ body {
   min-width: 1000px;
   padding: 50px;
   background: var(--primary-color);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
     url("background.jpg");
   background-size: cover;
   background-position: center;
   transition: background-image 0.3s ease;
 }
+
 img {
   width: 100%;
 }
+
 .wrapper {
   display: flex;
   width: 1200px;
@@ -31,16 +36,17 @@ img {
   border-radius: 20px;
   overflow: hidden;
 }
+
 .sidebar {
   width: 30%;
   min-width: 250px;
   padding: 20px;
-  background: rgba(221, 207, 207, 0.815);
+  background: rgba(255, 255, 255, 0.936);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  background-image: url("C:/Users/nbchi/OneDrive/Desktop/Final Project/side7.jpg");
+  background-image: url("images/side5.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -54,12 +60,14 @@ img {
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.4); /* Add a separate background color or image for the blur effect */
+  background: rgba(143, 90, 228, 0.4)Add a separate background color or image for the blur effect */
   filter: blur(70px);
 }
-.location-text{
+
+.location-text {
   font-size: 25px;
 }
+
 .search {
   display: flex;
   align-items: center;
@@ -68,6 +76,7 @@ img {
   margin-top: 20px;
   position: relative;
 }
+
 .search input {
   width: 100%;
   height: 40px;
@@ -78,39 +87,31 @@ img {
   font-size: 14px;
   color: #495057;
 }
+
 .search input:focus {
   outline: none;
   border: 1px solid var(--primary-color);
 }
+
 .search button {
   min-width: 40px;
   height: 40px;
   border: none;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  background: #a8b5c9;
-  color: #13133f;
-  font-size: 20px;
-  cursor: pointer;
-}
-.search button {
-  min-width: 40px;
-  height: 40px;
-  border: none;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
- background: #dff6ff;
- color: #06283D;
+  background: #dff6ff;
+  color: #06283D;
   font-size: 18px;
   cursor: pointer;
   background-image: linear-gradient(to right, #00b4db, #0083b0);
   transition: 0.4s ease;
 }
 
-.search button:hover{
-    color: #fff;
-    background: #06283D;
+.search button:hover {
+  color: #fff;
+  background: #06283D;
 }
+
 .search ul {
   max-height: 300px;
   overflow-y: auto;
@@ -122,21 +123,26 @@ img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
 }
+
 .search ul li {
   padding: 10px 15px;
   border-bottom: 1px solid #f1f1f1;
   cursor: pointer;
   text-transform: capitalize;
 }
+
 .search ul li:last-child {
   border-bottom: none;
 }
+
 .search ul li:hover {
   background-color: #f1f1f1;
 }
+
 .search ul li.active {
   background-color: #f1f1f1;
 }
+
 .weather-icon {
   width: 100%;
   height: 150px;
@@ -144,75 +150,101 @@ img {
   margin-top: 20px;
   margin-bottom: 100px;
 }
+
 .weather-icon #icon {
   width: 80%;
   object-fit: cover;
 }
+
 .temperature {
   display: flex;
+  color: #add8e6; /* Changing text color to light blue */
+  text-shadow: 0 0 3px #36b5df, 0 0 6px #36b5df, 0 0 9px #36b5df, 0 0 12px #36b5df; /* Further reduced glowing effect */
 }
+
 .temperature #temp {
   font-size: 70px;
   font-weight: 100;
   line-height: 1;
 }
+
 .temperature span {
   font-size: 40px;
   margin-top: -10px;
   display: block;
 }
+.date-time{
+  font-size: 20px;
+  margin-top: 10px;
+  color: #add8e6; /* Changing text color to light blue */
+  text-shadow: 0 0 3px #36b5df, 0 0 6px #36b5df, 0 0 9px #36b5df, 0 0 12px #36b5df; /* Further reduced glowing effect */
+
+}
+
 .divider {
   width: 100%;
   height: 1px;
-  background: #e9ecef;
+  background: #fbfdff;
   margin: 20px 0;
+    text-shadow: 0 0 3px #36b5df, 0 0 6px #36b5df, 0 0 9px #36b5df, 0 0 12px #36b5df; /* Further reduced glowing effect */
+
 }
+
 .condition-rain {
   font-size: 12px;
   text-transform: capitalize;
+    text-shadow: 0 0 3px #36b5df, 0 0 6px #36b5df, 0 0 9px #36b5df, 0 0 12px #36b5df; /* Further reduced glowing effect */
+
 }
+
 .condition-rain div {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 10px;
 }
+
 .condition-rain div i {
   width: 20px;
 }
+
 .location {
   display: flex;
   align-items: center;
   font-size: 14px;
   gap: 10px;
   margin-top: 10px;
+    color: #add8e6; /* Changing text color to light blue */
+
+    text-shadow: 0 0 3px #36b5df, 0 0 6px #36b5df, 0 0 9px #36b5df, 0 0 12px #36b5df; /* Further reduced glowing effect */
+
 }
+
 .main {
   width: 100%;
   min-width: 400px;
   padding: 20px 40px;
   position: relative;
   padding-bottom: 90px;
-  background-image: url("./static/side5.jpg");
+  background-image: url("images/side5.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
 }
 
 .main nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-   justify-content: right;
-   
+  justify-content: right;
 }
+
 .main nav .options {
   display: flex;
   gap: 10px;
   align-items: center;
-  
 }
+
 .main nav .options button {
   border: none;
   background: none;
@@ -221,8 +253,8 @@ img {
   color: #495057;
   cursor: pointer;
   text-transform: capitalize;
- 
 }
+
 .main nav .options button.active {
   color: var(--primary-color);
 }
@@ -233,14 +265,15 @@ img {
   border-radius: 50%;
   color: #1a1a1a;
   background-color: #fff;
-   justify-content: right;
-   
+  justify-content: right;
 }
+
 .main nav .units button.active {
   color: #fff;
   background-color: #1a1a1a;
   justify-content: right;
 }
+
 .main .cards {
   display: flex;
   flex-wrap: wrap;
@@ -254,28 +287,30 @@ img {
   border-radius: 10px;
   color: #6f26ce;
   background-color: #2a1a22ab;
-   
-  
   text-align: center;
   padding: 10px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .card h2 {
   font-size: 15px;
   font-weight: 600;
 }
+
 .card .card-icon {
   width: 50%;
   margin: 0 auto;
 }
+
 .card .day-temp {
   font-size: 12px;
   display: flex;
   justify-content: center;
   display: flex;
 }
+
 .highlights {
   display: flex;
   flex-wrap: wrap;
@@ -283,29 +318,28 @@ img {
   margin-top: 20px;
 }
 
-.heading
-{
+.heading {
   margin-top: 100px;
 }
-.card{
-    
-    background-color: #5b1a86;
-    box-shadow: 0 0 5px rgba(49, 12, 186, 0.962);
-    transition: transform 0.3s ease;
+
+.card {
+  background-color: #5b1a86;
+  box-shadow: 0 0 5px rgba(49, 12, 186, 0.962);
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
+
 .card2 {
-    
-    background-color: #5b1a86;
-    box-shadow: 0 0 10px rgba(255, 0, 195, 0.652);
-    transition: transform 0.3s ease;
+  background-color: #5b1a86;
+  box-shadow: 0 0 10px rgba(255, 0, 195, 0.652);
+  transition: transform 0.3s ease;
 }
 
 .card2:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .highlights .heading {
@@ -313,10 +347,10 @@ img {
   font-size: 20px;
   font-weight: 600;
   text-transform: capitalize;
-   color: red;
+  color: red;
 }
 
-.link{
+.link {
   font-size: 1px;
 }
 
@@ -325,39 +359,40 @@ img {
   height: 150px;
   border-radius: 20px;
   color: #6f26ce;
-  background-color:  #381933;
-
-
+  background-color: #381933;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-   
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
 }
+
 .card2 .card-heading {
-  color:#6f26ce;
+  color: #6f26ce;
 }
 
-.card-headings  {
+.card-headings {
   font-size: 22px;
 }
 
 .card2 .content {
   margin-top: 20px;
 }
+
 .card2 .content p:first-child {
   text-align: center;
   font-size: 30px;
 }
+
 .card2 .content p:nth-child(2) {
   font-size: 12px;
   margin-top: 20px;
   text-align: left;
 }
+
 .credits {
   text-align: center;
   font-size: 12px;
@@ -366,4 +401,4 @@ img {
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-} 
+}
